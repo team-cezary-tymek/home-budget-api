@@ -3,7 +3,11 @@ class ExpensesController < ApplicationController
 
   # GET /expenses
   def index
-    @expenses = Expense.all
+    if params[:category_id].present?
+      @expenses = Expense.where(category_id: params[:category_id])
+    else
+      @expenses = Expense.all
+    end
 
     render json: @expenses
   end
