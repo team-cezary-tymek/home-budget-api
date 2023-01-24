@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+This README document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Make sure that you have Rails with Ruby installed and PATH variables are setup properly.
+You also should have SQLite installed to handle the database.
+
+cd into home-budget-api directory
+```
+cd home-budget-api
+```
+
+run db migrations with
+```
+rails db:migrate
+```
+
+run the server with
+```
+rails server
+```
 
 * Ruby version
 
-* System dependencies
+ruby 3.1.3
 
-* Configuration
+* Rails version
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Rails 7.0.4
