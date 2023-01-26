@@ -4,4 +4,8 @@ class Expense < ApplicationRecord
   validates :name, presence: true
   validates :value, presence: true
   validates :date, presence: true
+
+  def as_json(options = {})
+    super(include: :category)
+  end
 end
